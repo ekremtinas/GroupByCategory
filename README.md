@@ -6,7 +6,8 @@ group by  with Javascript
 
 ```javascript
 const groupByCategoryFormatted=require('group-by-category');
-const ExampleArray=groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'value')
+let PureArray = [{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}];
+const ExampleArray=groupByCategoryFormatted(PureArray,'value')
 [
    {
         value: "Fenerbahçe",
@@ -35,7 +36,7 @@ ex:ExampleArray.find(item=>item.value=="Fenerbahçe").array
 
 
 
-const ExampleArrayKey =groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'key')
+const ExampleArrayKey =groupByCategoryFormatted(PureArray,'key')
 [
     {
         key: 1,
