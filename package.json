@@ -1,6 +1,6 @@
 {
   "name": "group-by-category",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "group by with javascript",
   "main": "index.js",
   "scripts": {

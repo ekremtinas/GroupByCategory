@@ -6,7 +6,7 @@ group by  with Javascript
 
 ```javascript
 const groupByCategoryFormatted=require('group-by-category');
-groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'value')
+const ExampleArray=groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'value')
 [
    {
         value: "Fenerbahçe",
@@ -31,14 +31,14 @@ groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'
         ]
     }
 ]
-ex:array.find(item=>item.value=="Fenerbahçe").array
+ex:ExampleArray.find(item=>item.value=="Fenerbahçe").array
 
 
 
-groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'key')
+const ExampleArrayKey =groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'},{key:3,value:'Neşet Ertaş'}],'key')
 [
     {
-        key: "1",
+        key: 1,
         array: [
             {
                 key: 1,
@@ -47,7 +47,7 @@ groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'
         ]
     },
     {
-        key: "2",
+        key: 2,
         array: [
             {
                 key: 2,
@@ -56,7 +56,7 @@ groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'
         ]
     },
     {
-        key: "3",
+        key: 3,
         array: [
             {
                 key: 3,
@@ -65,4 +65,5 @@ groupByCategoryFormatted([{key:1,value:'Fenerbahçe'},{key:2,value:'Fenerbahçe'
         ]
     }
 ]
+ex:ExampleArrayKey.find(item=>item.key==1).array
 ```
