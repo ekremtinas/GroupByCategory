@@ -17,5 +17,6 @@ const groupByCategoryFormatted=(array,field)=>{
     }, {});
     return Object.entries(groupBy).map(item=>{ let obj={}; obj[field]=item[0]; obj['array']=item[1];  return obj});
   }
+  
  module.exports = groupByCategoryFormatted;
  module.exports={groupByCategory};
