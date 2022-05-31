@@ -1,0 +1,19 @@
+{
+  "name": "group-by-category",
+  "version": "1.0.1",
+  "description": "group by with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekremtinas/GroupByCategory.git"
+  },
+  "author": "ekremtinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekremtinas/GroupByCategory/issues"
+  },
+  "homepage": "https://github.com/ekremtinas/GroupByCategory#readme"
+}
